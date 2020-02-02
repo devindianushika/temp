@@ -1,0 +1,16 @@
+#define GSM_BEGIN "ATE0\r"
+#define SET_GPRS   "AT+SAPBR=3,1,\"Contype\",\"GPRS\"\r"
+#define DISABLE_GPRS "AT+SAPBR =0,1\r"
+#define ENABLE_GPRS "AT+SAPBR =1,1\r"
+#define ENABLE_HTTP "AT+HTTPINIT\r"
+#define SET_PROFILE "AT+HTTPPARA=\"CID\",1\r"
+#define START_GET "AT+HTTPACTION=0\r"
+#define READ_DATA "AT+HTTPREAD\r"
+#define SET_APN "AT+SAPBR=3,1,\"APN\",\"www\"\r"
+#define TXT_MSG_MODE "AT+CMGF=1\r"
+#define GET_IP "AT+SAPBR =2,1\r"
+#define ENABLE_HTTPS "AT+HTTPSSL=1\r"
+#define TERMINATE_SESSION "AT+HTTPTERM\r"
+#define CHECK_BAUD "AT+IPR?\r"
+
+
